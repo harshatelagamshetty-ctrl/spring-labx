@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Documented
 @Constraint(validatedBy = validator2.class)
 public @interface Min {
-    public String defaultMessage() default "The input is less than the minimum requirement!!";
+    public String message() default "The input is less than the minimum requirement!!";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

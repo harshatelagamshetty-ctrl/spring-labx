@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Documented
 @Constraint(validatedBy = validator1.class)
 public @interface NotNull {
-    public String defaultMessage() default "The input is null!!";
+    public String message() default "The input is null!!";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
